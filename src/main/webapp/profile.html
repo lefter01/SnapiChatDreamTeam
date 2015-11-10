@@ -2,10 +2,20 @@
 <html lang="en">
     <head>	    
 	    <title> Profile </title>
+		 <script src="profile.js"> </script> 
 		<link rel="stylesheet" type ="text/css" href="profilestyle.css" />
+		<style>
+		    div.informations {
+                background-color: #F0F8FF;
+                color:black;
+                margin:30px;
+                padding:30px;
+				}
+	    </style>
+	
 	</head>
 	<body>
-	<nav class="navbar navbar-default">
+	     <nav class="navbar navbar-default">
 	   
              <div id="nav-wrapper">
                 <ul id="nav">
@@ -15,55 +25,35 @@
             </div> 
            
 	    
-		<h2> <button type="takeNewPictureFunction()">Take a new picture </button> 
-		</h2>
+		<h1> 
+		    <button class="btnTakeNewPictures" type="submit" value="TakeNewPicture">Take a new picture </button> 
+		</h1>
 		
 	    <br><br><br><input type="file" onchange="previewFile()"><br>
-        <img src="" height="200" alt="Image preview..."><br><br><br>
+            <img src="" height="200" alt="Image preview..."><br><br><br>
 		 
-		<h3> 
-		    <ul><u> Informations</u> :
+		<div class="informations"> 
+		    <ul> <u> Informations </u> 
 			    <li>Nickname = <input name='userNickname' value='alexgil1994' /> </li>
 			    <li>Name = <input name='userName' value='Alexandros' /></li>
-				<li>Surname = <input name='userSurname' value='Markovits' /></li>
-				<li>Email = <input name='userEmail' value='alexgil2000@hotmail.com' /></li>
-				<li>Country = <input name='userCountry' value='Greece' /></li>
-				<li>City = <input name='userCity' value='Thessaloniki' /></li>
-				<li>Phone number = <input name='userPhoneNumber' value='6986311905' /></li>
-				<li>Password = <input type='hidden' name='userPassword' value='*****' /></li>
-			</ul><br>
+			    <li>Surname = <input name='userSurname' value='Markovits' /></li>
+			    <li>Email = <input name='userEmail' value='alexgil2000@hotmail.com' /></li>
+		       	    <li>Country = <input name='userCountry' value='Greece' /></li>
+			    <li>City = <input name='userCity' value='Thessaloniki' /></li>
+			    <li>Phone number = <input name='userPhoneNumber' value='6986311905' /></li>
+			    <li>Password = <input type='hidden' name='userPassword' value='*****' /></li>
+		    </ul><br>
 			
-			<button type="editInfFunction()">Edit informations</button> 
+		    <button class="btnEditInformations" type="submit" value="editInformations">Edit informations</button> 
 
-		</h3>
-		<h4>
+		</div>
+		<h3>
 		    
-		    <button type="listOfFriendsFunction()">List of friends</button> 
-	            <button type="listOfGroupsFunction()">List of groups</button>
+		    <button class="btnListOfFriends" type="submit" value="listOfFriends">List of friends</button> 
+	            <button class="btnlistOfGroups" type="submit" value="listOfGroups">List of groups</button>
 			
 			
-		</h4>
-		
-		
-	</body>
+		</h3>
+        </body>
 	
-<script>
-        function previewFile(){
-            var preview = document.querySelector('img'); //selects the query named img
-            var file    = document.querySelector('input[type=file]').files[0]; //sames as here
-            var reader  = new FileReader();
-
-            reader.onloadend = function () {
-            preview.src = reader.result;
-            }
-
-            if (file) {
-            reader.readAsDataURL(file); //reads the data as a URL
-            } else {
-            preview.src = "";
-            }
-        }
-
-        previewFile();  //calls the function named previewFile()
-</script>
 </html>

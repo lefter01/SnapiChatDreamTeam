@@ -1,0 +1,109 @@
+body {
+	background-color: #90EE90;
+}
+
+h1 {
+	text-align: right;
+}
+h3 {
+	text-align: right;
+}
+#nav-wrapper {
+width:1000px;
+margin:0 auto;
+padding:5px 0;
+background: #696969;
+}
+ul#nav {
+font-family: Verdana;
+font-size:20px;
+list-style:none;
+margin:0 auto;
+padding:0;
+width:200px;
+overflow: auto;
+}
+
+ul#nav li {
+display:inline;
+}
+
+ul#nav li a {
+text-decoration:none;
+display: block;
+padding:5px 10px;
+background: #D3D3D3;
+color: black;
+float:left;
+text-align:left;
+border-top:2px solid black;
+border-right:2px solid #3d1000;
+border-bottom:2px solid #3d1000;
+border-left:2px solid black;
+}
+
+ul#nav li a:hover {
+background:#A9A9A9;
+color:#000;
+border-top:2px solid black;
+border-right:2px solid #A9A9A9;
+border-bottom:2px solid #A9A9A9;
+border-left:2px solid black;
+}
+.btnListOfFriends {
+	color: white;
+	background: #696969;
+	font-weight: bold;
+	border: 6px solid #696969;
+}
+.btnListOfFriends:hover {
+	background:#A9A9A9;
+    color:white;
+	border-top:2px solid #A9A9A9;
+    border-right:2px solid #A9A9A9;
+    border-bottom:2px solid #A9A9A9;
+    border-left:2px solid #A9A9A9;
+}
+.btnlistOfGroups {
+	color: white;
+	background: #696969;
+	font-weight: bold;
+	border: 6px solid #696969;
+}
+.btnlistOfGroups:hover {
+	background:#A9A9A9;
+    color:white;
+	border-top:2px solid #A9A9A9;
+    border-right:2px solid #A9A9A9;
+    border-bottom:2px solid #A9A9A9;
+    border-left:2px solid #A9A9A9;
+}
+.btnEditInformations {
+	color: black;
+	background: silver;
+	font-weight: bold;
+	border: 1px solid #696969;
+}
+.btnEditInformations:hover {
+	background:#A9A9A9;
+    color:white;
+	border-top:2px solid #A9A9A9;
+    border-right:2px solid #A9A9A9;
+    border-bottom:2px solid #A9A9A9;
+    border-left:2px solid #A9A9A9;
+}
+.btnTakeNewPictures {
+	color: white;
+	background: #696969;
+	font-weight: bold;
+	border: 3px solid #696969;
+}
+.btnTakeNewPictures:hover {
+	background:#A9A9A9;
+    color:white;
+	border-top:2px solid #A9A9A9;
+    border-right:2px solid #A9A9A9;
+    border-bottom:2px solid #A9A9A9;
+    border-left:2px solid #A9A9A9;
+}
+
