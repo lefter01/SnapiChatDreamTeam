@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>	    
+	    <title> Profile </title>
+		<link rel="stylesheet" type ="text/css" href="profilestyle.css" />
+	</head>
+	<body>
+	<nav class="navbar navbar-default">
+	    <h1> 
+		    <div id="nav-wrapper">
+                <ul id="nav">
+                    <li><a href="http://localhost:9090/SnapiChatDreamTeam/Profile">Profile</a></li>
+                    <li><a href="http://localhost:9090/SnapiChatDreamTeam/Home">Home</a></li>
+                </ul>
+            </div> 
+		</h1>
+	    
+		<h2> <button type="takeNewPictureFunction()">Take a new picture </button> 
+		</h2>
+		
+	    <br><br><br><input type="file" onchange="previewFile()"><br>
+        <img src="" height="200" alt="Image preview..."><br><br><br>
+		 
+		<h3> 
+		    <ul><u> Informations</u> :
+			    <li>Nickname = <input name='userNickname' value='alexgil1994' /> </li>
+			    <li>Name = <input name='userName' value='Alexandros' /></li>
+				<li>Surname = <input name='userSurname' value='Markovits' /></li>
+				<li>Email = <input name='userEmail' value='alexgil2000@hotmail.com' /></li>
+				<li>Country = <input name='userCountry' value='Greece' /></li>
+				<li>City = <input name='userCity' value='Thessaloniki' /></li>
+				<li>Phone number = <input name='userPhoneNumber' value='6986311905' /></li>
+				<li>Password = <input type='hidden' name='userPassword' value='*****' /></li>
+			</ul><br>
+			
+			<button type="editInfFunction()">Edit informations</button> 
+
+		</h3>
+		<h4>
+		    
+		    <button type="listOfFriendsFunction()">List of friends</button> 
+	            <button type="listOfGroupsFunction()">List of groups</button>
+			
+			
+		</h4>
+		
+		
+	</body>
+	
+	<script>
+        function previewFile(){
+            var preview = document.querySelector('img'); //selects the query named img
+            var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+            var reader  = new FileReader();
+
+            reader.onloadend = function () {
+            preview.src = reader.result;
+            }
+
+            if (file) {
+            reader.readAsDataURL(file); //reads the data as a URL
+            } else {
+            preview.src = "";
+            }
+        }
+
+        previewFile();  //calls the function named previewFile()
+    </script>
+</html>
