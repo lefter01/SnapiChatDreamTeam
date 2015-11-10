@@ -1,0 +1,35 @@
+body {
+    margin:0;
+    padding: 0;
+    background-image: url(pra2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#startup {
+    width: 100%;
+    background:#4aaee7;
+    color:white;
+    height: 75px;
+    font-size: 18px;
+        
+}
+
+#startup a {
+    float:right;
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0px;
+    font-size: 25px;
+    
+}
+
+#startup a:hover{
+    background:white;
+    color:#4aaee7;
+}
+
+#logo {
+    margin-left: 130px; 
+}
