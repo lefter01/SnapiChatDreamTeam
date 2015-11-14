@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Chat - Customer Module</title>
+        <link type="text/css" rel="stylesheet" href="css/homepage.css" />
+    </head>
+<body background="images/homepage_background.jpg">    
+    <div id="wrapper">
+        
+         <div id="menu">
+              <p class="welcome">Welcome, <b></b></p>
+              <p class="logout"><a id="logout" href="index.html">LogOut</a></p>
+         <div style="clear:both"></div>
+         </div>
+        <select class="form-control input-lg" tabindex="6" name="country" >
+                                        <option value="0">
+                                             Select country
+                                        </option>
+                                        <option value="1">
+                                             Greece
+                                        </option>
+                                        <option value="2">
+                                             Russia
+                                        </option>
+        </select>
+     
+         <div id="chatbox"></div>
+     
+             <form name="message" action="" >
+                 <input name="usermsg" type="text" id="usermsg" size="63" />
+                 <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+             </form>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    // jQuery Document
+    $(document).ready(function(){
+ 
+    });
+    </script>
+</body>
+</html>

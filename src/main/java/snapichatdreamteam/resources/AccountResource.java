@@ -80,7 +80,7 @@ public class AccountResource {
             Connection con = null;
            
             try {
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/snapidb?user=root");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/snapchatdb","root","zkpovolz01");
                 
                  String SQL_INSERT = "INSERT INTO user" + " VALUES(NULL,?,?,?,?,?,?,?,?,?)";
                  PreparedStatement statement = con.prepareStatement(SQL_INSERT);
