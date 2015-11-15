@@ -33,19 +33,20 @@
             <img src="" height="200" alt="Image preview..."><br><br><br>
 		 
 		<div class="informations"> 
-		    <ul> <u> Informations </u> 
-			    <li>Nickname = <input name='userNickname' value='alexgil1994' /> </li>
-			    <li>Name = <input name='userName' value='Alexandros' /></li>
-			    <li>Surname = <input name='userSurname' value='Markovits' /></li>
-			    <li>Email = <input name='userEmail' value='alexgil2000@hotmail.com' /></li>
-		       	    <li>Country = <input name='userCountry' value='Greece' /></li>
-			    <li>City = <input name='userCity' value='Thessaloniki' /></li>
-			    <li>Phone number = <input name='userPhoneNumber' value='6986311905' /></li>
-			    <li>Password = <input type='hidden' name='userPassword' value='*****' /></li>
-		    </ul><br>
+		    <ul><u> Informations</u> :
+			    <li>Nickname = <div id="username" /><script> document.getElementById("username").innerHTML =person.username; </script> </li>
+			    <li>Name = <div id="userfname" /><script> document.getElementById("userfname").innerHTML =person.userfname; </script> </li>
+				<li>Surname = <div id="userlname" /><script> document.getElementById("userlname").innerHTML =person.userlname; </script> </li>
+				<li>Email = <div id="useremail" /><script> document.getElementById("useremail").innerHTML =person.useremail; </script> </li>
+				<li>Country = <div id="usercountry" /><script> document.getElementById("usercountry").innerHTML =person.usercountry; </script> </li>
+				<li>City = <div id="usercity" /><script> document.getElementById("usercity").innerHTML =person.usercity; </script></li>
+				<li>Phone number = <div id="userphone" /><script> document.getElementById("userphone").innerHTML =person.userphone; </script> </li>
+				<li>Password = <div id="userpass" /><script> document.getElementById("userpass").innerHTML =person.userpass; </script> </li>
+			</ul><br>
 			
-		    <button class="btnEditInformations" type="submit" value="editInformations">Edit informations</button> 
-
+			<div class="EditInformations">
+			<a href="http://localhost:9090/SnapiChatDreamTeam/profileEdit.html">Edit informations</a>
+                        </div>
 		</div>
 		<h3>
 		    

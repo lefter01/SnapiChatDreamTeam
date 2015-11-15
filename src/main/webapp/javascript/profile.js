@@ -1,3 +1,17 @@
+
+
+var person = 
+    {
+       userimage: image,
+       username : username,
+       userfname : fName,
+       userlname : lName,
+       useremail : email,
+       usercountry : country,
+       usercity : city,
+       userphone : phone,
+       userpass : pass
+    };
 function previewFile(){
             var preview = document.querySelector('img'); //selects the query named img
             var file    = document.querySelector('input[type=file]').files[0]; //sames as here

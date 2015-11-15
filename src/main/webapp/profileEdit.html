@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>	    
+	    <title> Profile </title>
+		 <script src="profile.js"> </script> 
+		<link rel="stylesheet" type ="text/css" href="profilestyle.css" />
+		<style>
+		    div.informations {
+                background-color: #F0F8FF;
+                color:black;
+                margin:30px;
+                padding:30px;
+				}
+	    </style>
+	
+	</head>
+	<body>
+	<nav class="navbar navbar-default">
+	   
+             <div id="nav-wrapper">
+                <ul id="nav">
+                    <li><a href="http://localhost:9090/SnapiChatDreamTeam/Profile">Profile</a></li>
+                    <li><a href="http://localhost:9090/SnapiChatDreamTeam/Home">Home</a></li>
+                </ul>
+            </div> 
+           
+	    
+		<h1> 
+		    <button class="btnTakeNewPictures" type="submit" value="TakeNewPicture">Take a new picture </button> 
+		</h1>
+		
+	    <br><br><br><input type="file" onchange="previewFile()"><br>
+        <img src="" height="200" alt="Image preview..."><br><br><br>
+		 
+		<div class="informations"> 
+		<form action="path">
+		    <ul><u> Informations</u> :
+			    <li>Nickname = <input name='username' value='alexgil1994' size="18" /> </li>
+			    <li>Name = <input name='fName' value='Alexandros' size="23" /></li>
+				<li>Surname = <input name='lName' value='Markovits' size="20" /></li>
+				<li>Email = <input name='email' value='alexgil2000@hotmail.com' size="23" /></li>
+				<li>Country = <input name='country' value='Greece' size="21" /></li>
+				<li>City = <input name='city' value='Thessaloniki' size="25" /></li>
+				<li>Phone number = <input name='phone' value='6986311905' size="14"  /></li>
+				<li>Password = <input name='pass' value='*****' size="22" /></li>
+			</ul><br>
+			<button class="btnEditInformations" type="submit" value="editInformations">Save informations</button> 
+        </form>
+		</div>
+		<h3>
+		    
+		    <button class="btnListOfFriends" type="submit" value="listOfFriends">List of friends</button> 
+	        <button class="btnlistOfGroups" type="submit" value="listOfGroups">List of groups</button>
+			
+			
+		</h3>
+		
+		
+	</body>
+	
+</html>
