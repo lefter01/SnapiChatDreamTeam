@@ -78,9 +78,9 @@ public class AccountResource {
             //TODO: Add the connection string to a configuration file
             //TODO: Move all this database stuff to repository classes
             Connection con = null;
-           
+           String m = null;
             try {
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/snapidb?user=root");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/snapchatdb","root","root");
                 
                  String SQL_INSERT = "INSERT INTO user" + " VALUES(NULL,?,?,?,?,?,?,?,?,?)";
                  PreparedStatement statement = con.prepareStatement(SQL_INSERT);
@@ -105,6 +105,8 @@ public class AccountResource {
                  statement.executeUpdate();
             } catch (SQLException ex) {
                //TODO: Add logging
+                m = ex.getMessage();
+               
             }finally{
                 if (con!=null){
                     try {
